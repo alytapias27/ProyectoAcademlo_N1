@@ -1,11 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-family: 'Rubik', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
 }
-
+/* Header */
+.barnav{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8 ;
+}
+.logoMenu{
+  padding: 13px 180px; 
+  display: inline-block;
+}
+.logotipo{
+  color:grey;
+  left: 200px;
+  text-align: center;
+}
+nav{
+  display:inline-block;
+}
+nav li{
+  display:inline-block;
+  margin-left: 40px;
+}
+.flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+}
 /* Intro section */
 #intro {
   min-height: 100vh;
@@ -18,18 +47,143 @@
 .intro-subtitle {
   font-size: 22px;
 }
-
-/* Servicios */
-#services {
+/* Segunda Seccion - cards */
+#cards {
   margin-top: -100px;
 }
-.terceraSection{
+.contem{
+  margin-top: 200px;
+}
+.contem h3{
+  font-size: 25px;
+}
+.contem p{
+  font-size: 17px;
+  font-weight: 100;
+}
+.space-left{
+  padding: 16px;
+  font-size: 13px;
+}
+/* Tercera seccion */
+.section-tres{
   text-align:center;
   margin-top: 240px;
+  background-color: blueviolet;
 }
-.quintaSection{
-  text-align:center;
+/* imagenes */
+.imagenes{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  /* flex-flow: column wrap; */
+  flex-direction: column ;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  background-color: aqua;
 }
+.imagen1{
+  margin-top: 20px;
+}
+.imagen2{
+  margin-top: 20px;
+}
+.imagen3{
+  margin-top: 20px;
+}
+.imagen4{
+  margin-top: 20px; 
+}
+.imagen5{
+  margin-top: 20px;
+}
+.imagen6{
+  margin-top: 20px;
+}
+.button{
+  padding: 10px 60px;
+  border: solid 1px black;
+}
+
+
+
+
+/* mitad */
+.testimonios{
+  width: 100%;
+  height: 250px;
+  padding-top: 100px;
+  padding-left: 350px;
+  padding-right: 350px;
+  background-color: violet;
+  /* background-color: #f8f8f8 !important; */
+  display: flex;
+}
+.tex{
+  width: 100%;
+  height: 130px;
+  background-color: chartreuse;
+}
+.tex h5{
+  font-size: 26px;
+}
+.cajas-tex{
+  height: 100%;
+  height: 450px;
+  padding: 50px 0px;
+  position: relative;
+  background-color: deeppink;
+}
+
+.cajas-testimonios{
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+} 
+
+
+
+.card1{
+  padding: 50px;
+  background-color: white;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  box-sizing: border-box;
+  top: 40px;
+  margin: 40px; 
+}
+.card2{
+  padding: 50px;
+  background-color: white;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  box-sizing: border-box;
+  top: 40px;
+  margin: 40px; 
+}
+
+
+
+
+
+/* arriba */
+.arriba{
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+}
+.img{
+  height: 150px;
+  width: 50%;
+}
+.text{
+  width: 50%;
+} 
+/* septima seccion */
 .septimaSection{
   margin-top: 100px;
 }
@@ -56,114 +210,18 @@
   height: 130px;
   bottom: -25px;
 }
-.logo{
-  color:grey;
-  left: 200px;
-  text-align: center;
+
+
+.quintaSection{
+  text-align:center;
 }
 .contacto{
   left: 100px;
 } 
-.arriba{
-  display: flex;
-  width: 100%;
-  margin-top: 100px;
-  align-items: center;
-}
-.img{
-  height: 150px;
-  width: 50%;
-}
-.text{
-  width: 50%;
-} 
 .padding-small{
   padding:50px;
 }
-nav{
-  display:inline-block;
-}
-nav li{
-  display:inline-block;
-  margin-left: 40px;
-}
-.flex{
-  display:flex;
-  justify-content:space-between;
-  align-items:center; 
-}
-.barnav{
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: #f8f8f8 ;
-}
-.logoMenu{
-  padding: 13px 180px; 
-  display: inline-block;
-}
-.imagenes{
-  width: 100%;
-  height: 950px;
-  display: flex;
-  /* flex-flow: column wrap; */
-  flex-direction: column ;
-  flex-wrap: wrap;
-  margin-top: 60px;
-}
-.imagen1{
-  margin-top: 20px;
-}
-.imagen2{
-  margin-top: 20px;
-}
-.imagen3{
-  margin-top: 20px;
-}
-.imagen4{
-  margin-top: 20px; 
-}
-.imagen5{
-  margin-top: 20px;
-}
-.imagen6{
-  margin-top: 20px;
-}
-.botton2{
-  padding: 10px 60px;
-  border: solid 1px black;
-  }
-  .mitad{
-    padding: 130px;
-    background-color: #f8f8f8 !important;
-    display: flex;
-     
-  }
-  .card1{
-    padding: 50px;
-    background-color: white;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    box-sizing: border-box;
-    top: 40px;
-    margin: 40px; 
-  }
-.card2{
-  padding: 50px;
-  background-color: white;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  box-sizing: border-box;
-  top: 40px;
-  margin: 40px; 
-}
-.tex{
-  text-align: center;
-}
-.barra-menu {
-  
-}
+
+
+
+
